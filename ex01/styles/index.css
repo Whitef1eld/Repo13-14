@@ -1,0 +1,11 @@
+img {
+    width: 200px;
+    vertical-align: top;
+    margin: 2px 6px 2px 6px;
+}
+
+.kontejner {
+    max-width: max-content;
+    margin: auto;
+    display: flex;
+}
