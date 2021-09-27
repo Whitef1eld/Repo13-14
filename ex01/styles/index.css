@@ -1,11 +1,91 @@
-img {
-    width: 200px;
-    vertical-align: top;
-    margin: 2px 6px 2px 6px;
-}
-
-.kontejner {
+body {
     max-width: max-content;
     margin: auto;
+}
+  
+.row {
+    width: 880px;
+    margin: 0 auto;
+    text-align: center;
     display: flex;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 12px 0 12px;
+}
+  
+.row .image { 
+    position: relative;  
+    float: left; 
+}
+  
+img {
+    width: 200px;
+}
+  
+.black {
+    width: 200px;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.image:hover .black {
+    visibility: visible;     
+}
+  
+.black h1 {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+  
+.modal {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   background: white;
+   visibility: hidden;
+   max-width: 1080px;
+}
+  
+.modalDiv {
+  height: auto;
+  margin: 0 auto;
+}
+  
+.close {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background: black;
+  border-radius: 25%;
+}
+  
+.on {
+  visibility: visible;
+}
+  
+.off {
+  visibility: hidden;
+}
+  
+iframe { 
+    display: block;
+}
+  
+.content h1, p {
+  text-align: center;
+  font-size: smaller;
+  font-weight:lighter;
 }
